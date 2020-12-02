@@ -1,0 +1,2 @@
+﻿SELECT p.ProductName, p.Price,Categories.CategoryName, Categories.Description  FROM Products p INNER JOIN Categories ON p.CategoryId = Categories.Id
+Join(SELECT MIN(Price) AS price from Products)as minPrice ON p.Price = minPrice.price;

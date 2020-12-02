@@ -1,0 +1,1 @@
+﻿INSERT INTO Products VALUES(6,'Green tea', 10,(SELECT Suppliers.Id FROM Suppliers WHERE SupplierName = 'Norske Meierier'),(SELECT Categories.Id FROM Categories WHERE CategoryName = 'Beverages'));
